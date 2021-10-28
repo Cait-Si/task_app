@@ -9,8 +9,19 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
-  <body>
-    <%= yield %>
+  <body class="reset">
+    <header>
+      <h1>Ruby on Rails スケジュール管理アプリ</h1>
+    </header>
+    <div class="content">
+      <%= yield %>
+    </div>
+      <footer>
+        <h1>現在の日時は：<%= Date.today.to_s(:date_jp) %>
+        <% if @counter %>
+          <span class="task_sum">スケジュール合計：<%= @counter %></span>
+        <% end %>
+        </h1>
+      </footer>
   </body>
 </html>

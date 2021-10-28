@@ -13,3 +13,86 @@
  *= require_tree .
  *= require_self
  */
+
+ .reset {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding-bottom: 150px;
+ }
+
+ header {
+   width: 100%;
+   padding: 10px;
+   background-color: orangered;
+   color: white;
+ }
+
+ footer {
+  width: 100%;
+  padding: 10px;
+  background-color: orangered;
+  color: white;
+  position: absolute;
+  bottom: 0;
+ }
+
+ .content {
+   display: block;
+   width: 100%;
+   margin-top: 30px;
+   padding-left: 15px;
+ }
+
+ table {
+   max-width: 80%;
+   border-collapse: collapse;
+   margin: 10px 0;
+ }
+
+ th {
+   border: solid 1px;
+   padding: 10px 20px;
+   background-color: #ffa550;
+ }
+
+ td {
+  border: solid 1px;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #ffd550;
+}
+ td > p {
+   margin: 5px;
+ }
+
+ li {
+   list-style: none;
+ }
+
+ .notice {
+   width: max-content;
+   background-color: #ffd550;
+   padding: 10px 20px;
+   margin: 10px;
+   border: solid 2px #ffa550;
+ }
+
+ input[type="text"] {
+   width: 100%;
+ }
+
+ input[type="date"]{
+   width: 100%;
+ }
+
+ textarea {
+   width: 100%;
+   height: 90px;
+ }
+
+ .task_sum {
+   padding-left: 50px;
+ }
